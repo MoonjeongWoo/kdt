@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+
+        <script>
+            function writeNote(){
+                var name = document.getElementById("name").value;
+        var content = document.getElementById("content").value;
+        var tr = document.createElement("tr");
+        var td1 = document.createElement("td");
+        td1.innerText = document.querySelectorAll("#table > tr").length + 1;
+        var td2 = document.createElement("td");
+        td2.innerText = name;
+        var td3 = document.createElement("td");
+        td3.innerText = content;
+        var td4 = document.createElement("td");
+        var date = new Date();
+        td4.innerText = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+(date.getDate())+" "+date.getHours() +" : "+date.getMinutes();
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        var table = document.getElementById("table");
+        table.appendChild(tr);
+        document.getElementById("name").value="";
+        document.getElementById("content").value="";
+        document.getElementById("name").focus();
+    }
+        </script>
+    </head>
+    <body>
+        <div>
+   <p>방명록입니다.</p>
+   <div>
+        <table class="tbl">
+        <tr>
+            <th>작성자</th>
+            <td>
+                <input type="text" id="name" style="width: 150px;">
+            </td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td>
+                <input type="text" id="content" style="width: 560px;">
+            </td>
+        </tr>
+        </table>
+        <br>
+        <button type="button" onclick="writeNote();">작성</button>
+        <br><br>
+        <table id="table" border="1" cellpadding="10" cellspacing="1">
+            <tr>
+                <th>번호</th>
+                <th>작성자</th>
+                <th>내용</th>
+                <th>작성일</th>
+            </tr>
+        </table>
+   </div>
+</div>
+    </body>
+</html>

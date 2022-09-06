@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <div>
+        <ul class="nav nav-tabs ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="bootstrap.html" aria-expanded="false"> HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="study.html" aria-expanded="false">
+                    나의 학습량 
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">수강하기</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">초딩용</a></li>
+                <li><a class="dropdown-item" href="#">중딩용</a></li>
+                <li><a class="dropdown-item" href="#">고딩용</a></li>
+                <li><a class="dropdown-item" href="#">직딩용</a></li>
+                <li><hr class="dropdown-divider"></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">QnA</a>
+            </li>
+          </ul>
+       </div>
+
+    <div>
+        <h2><strong>나의 학습량</strong></h2>
+        <div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                학습량 보기
+            </button>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <img src="/lecture/3day/다운로드 (1).png" width="150px">
+                    <strong>15강 / 60강</strong>
+                    <p>수강기한:</p>
+                    <p>2022.08.04~ 2022.12.31</p>
+                    <br>
+                    <p>현재 진도율</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <img src="/lecture/3day/node.png" width="150px">
+                    <strong>22강 / 63강</strong>
+                    <p>수강기한:</p>
+                    <p>2022.08.04~ 2022.12.31</p>
+                    <br>
+                    <p>현재 진도율</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 37%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">37%</div>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</html>

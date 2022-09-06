@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            .container{
+                width: 100%;
+                height: 40px;
+                box-shadow: 2px 2px 2px;
+                transition: 2s;
+            }
+            .toggle{
+                height: 500px;
+                width: 100%;
+                box-shadow: 1px 1px 1px red;
+                transition: 2s;
+                display: block;
+            }
+            #content{
+                display: none;
+            }
+            #show{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="asd" class="container">
+            css 속성
+            <br>
+            transition:2
+          
+        </div>
+        <script>
+            document.getElementById('asd').addEventListener('click',function(){
+                document.getElementById('asd').classList.toggle('toggle');
+                
+            })
+        </script>
+    </body>
+</html>

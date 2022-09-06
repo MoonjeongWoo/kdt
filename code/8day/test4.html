@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            #container{
+                width: 100%;
+                height: 50px;
+                background-color: beige;
+                border-radius: 15px;
+                margin-bottom: 20px;
+            }
+            #mousedown{
+                width: 100%;
+                height: 50px;
+                background-color: beige;
+                border-radius: 15px;
+            }
+            div{
+                width: 100%;
+                height: 50px;
+                background-color: beige;
+                border-radius: 15px;
+                margin-bottom: 20px;
+            }
+
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            저를 눌러보세요
+        </div>
+
+        <div id="mousedown">
+            저를 두번눌러보세요
+        </div>
+     
+        <div id="mouseout">
+            마우스를 바깥으로 움직이세요
+        </div>
+        <div id="text">
+            <input type="text">
+            텍스트를 써보세요
+        </div>
+        
+
+        <script>
+            $('#container').on('click',function(){
+                alert("안녕하세요 처음 뵙겠습니다");
+            })
+           $('#mousedown').dblclick(function(){
+            alert("더블클릭");
+           })
+           
+           $('#mouseout').mouseout(function(){
+            alert("마우스 바깥으로 나감");
+           })
+           $('#text').keydown(function(){
+            alert("키보드 눌림");
+           })
+           
+         
+        </script>
+
+    </body>
+</html>

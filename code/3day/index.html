@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="">
+        <style>
+
+            .fruits *:nth-child(1){
+                color: red;
+            }
+            .fruits *:not(h3){
+                color: blue;
+            }
+            /* css 속성 배우기 */
+/* ****************************************************************** */
+/* .fruits *:nth-child(?){} -> 전체 자식 태그중 몇번째 태그를 바꾼다 */
+/* .fruits *not(태그){} -> 가리키는 태그만 빼고 전부 다 바꾼다 */
+/* ******************************************************************* */
+
+/* ******************* 포지션 배우기 ****************************** */
+/* static -> 정적 위치 지정 방식 */
+/* relative -> 상대위치 지정 방식 */
+/* absolute -> 절대 위치 지정 방식  (부모 태그 기준)*/
+/* fixed -> 고정 위치 지정 방식 */
+/* ******************************************************************** */
+            #position1{
+                border: 1px solid black;
+                width: 100px;
+                height: 100px;
+                background-color: #eeee;
+                border-radius: 100px;
+                z-index: 0;
+                position: relative;
+            }
+            #position2{
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                background-color: white;
+                border-radius: 100px;
+                top: 200;
+                left: 20;
+                z-index: 1;
+            }
+            #position3{
+                position: relative;
+                width: 20px;
+                height: 20px;
+                background-color: black;
+                z-index: 2;
+                bottom: 60px;
+                left: 20px;
+                border-radius: 100px;
+            }
+            #position4{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                position: relative;
+                border: 2px solid black;
+                border-radius: 50px;
+                bottom: 50px;
+                left: 40px;
+                z-index: 3;
+            }
+            #position5{
+                width: 100px;
+                height: 100px;
+                background-color: blueviolet;
+                position: relative;
+                border: 2px solid black;
+                border-radius: 50px;
+                bottom: 100px;
+                left: 100px;
+                z-index: 4;
+            }
+            #position6{
+                width: 100px;
+                height: 100px;
+                background-color: yellowgreen;
+                position: relative;
+                border: 2px solid black;
+                border-radius: 50px;
+                bottom: 170px;
+                left: 170px;
+                z-index: 5;
+            }
+            #position7{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                position: relative;
+                border: 2px solid black;
+                border-radius: 50px;
+                bottom: 250px;
+                left: 230px;
+                z-index: 4;
+            }
+            #position8{
+                width: 100px;
+                height: 100px;
+                background-color: violet;
+                position: relative;
+                border: 2px solid black;
+                border-radius: 50px;
+                bottom: 350px;
+                left: 300px;
+            }
+            #img{
+                position: absolute;
+                top: 300;
+                width: 500px;
+                z-index: -10;
+            }
+            
+            #img2{
+                position: absolute;
+                top: 200;
+                width: 500px;
+                left: 10px;
+                z-index: -4;
+            }
+            #img3{
+                width: 500px;
+                position: absolute;
+                top: 350px;
+                z-index: 10;
+            }
+         /* ********************************************************** */
+         /* 트랜스폼 */
+         /* skew -> 기울기 */
+         /* scale -> 확대 */
+         /* rotate -> 회전 */
+         #img4{
+            z-index: 10;
+            width: 400px;
+            transform: skew(40deg,-40deg);
+           
+         }
+         #img5{
+            z-index: 5;
+            width: 400px;
+            transform: skew(40deg,-40deg);
+            
+         }
+         #img6{
+            z-index: 3;
+            width: 400px;
+            transform: skew(40deg,-40deg);
+         }
+         #img7{
+            transform: skew(-10deg,-10deg);
+         }
+         #top{
+            width: 100%;
+            background-color: dimgray;
+         }
+
+/* ************************************************** */
+/* display */
+/* inline, -> width height 적용 안됌
+    block -> 보이게 하는거 
+    inline-block ->width height 적용 됌
+    flex -> 하위에 있는 다른 태그들(하위 자식들) 가로로 배치가 된디,
+    자식의 자식은 못함
+    none -> 안보이게 하는거(크기도 차지 안함)
+     */
+        </style>
+    </head>
+    <body>
+        <div class="fruits">
+            <span>딸기</span>
+            <br>
+            <span>수박</span>
+            <div>오렌지</div>
+            <p>망고</p>
+            <h3>사과</h3>
+        </div>
+       <div> 
+            <div id="position1"></div>
+            <div id="position2"></div>
+            <div id="position3"></div>
+            <div id="position4"></div>
+            <div id="position5"></div>
+            <div id="position6"></div>
+            <div id="position7"></div>
+            <div id="position8"></div>
+            <img id="img" src="/lecture/3day/다운로드.jpg" alt="메롱">
+            <img id="img2" src="/lecture/3day/다운로드.jpg" alt="메롱2">
+            <img id="img3" src="/lecture/3day/grass1.png" alt="잔디임">
+            
+       </div>
+       
+      
+    </body>
+</html>
